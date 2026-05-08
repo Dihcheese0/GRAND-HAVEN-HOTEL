@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Haven Hotel - Boka rum</title>
+  <meta name="description" content="Boka ditt rum på Grand Haven Hotel i Malmö. Välj rumstyp, datum och antal gäster enkelt och snabbt.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Grand Haven Hotel startsida">
+        <img src="logo.webp" alt="Grand Haven Hotel logotyp" class="logo-icon">
+        <span class="logo-text">GRAND<br>HAVEN HOTEL</span>
+      </a>
+      <nav aria-label="Huvudmeny">
+        <ul>
+          <li><a href="index.html">Välkommen</a></li>
+          <li><a href="boka.html" class="active">Boka</a></li>
+          <li><a href="hitta.html">Hitta</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Öppna meny" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilmeny">
+    <a href="index.html">Välkommen</a>
+    <a href="boka.html" class="active">Boka</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hotellbild">
+    <img src="hero.webp" alt="Grand Haven Hotel" width="1400" height="420">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Boka ditt rum</h1>
+    </div>
+  </section>
+
+  <!-- MAIN -->
+  <main class="page-content">
+    <div class="container">
+      <div class="grid-2">
+
+        <!-- Booking form -->
+        <div class="card">
+          <h2>Bokningsformulär</h2>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="fornamn">Förnamn</label>
+              <input type="text" id="fornamn" name="fornamn" placeholder="Ditt förnamn" autocomplete="given-name">
+            </div>
+            <div class="form-group">
+              <label for="efternamn">Efternamn</label>
+              <input type="text" id="efternamn" name="efternamn" placeholder="Ditt efternamn" autocomplete="family-name">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="epost-boka">E-postadress</label>
+            <input type="email" id="epost-boka" name="epost" placeholder="din@epost.se" autocomplete="email">
+          </div>
+
+          <div class="form-group">
+            <label for="rumstyp">Rumstyp</label>
+            <div class="select-wrapper">
+              <select id="rumstyp" name="rumstyp">
+                <option value="">Välj rumstyp</option>
+                <option value="standard">Standardrum</option>
+                <option value="deluxe">Deluxerum</option>
+                <option value="svit">Svit</option>
+                <option value="familj">Familjerum</option>
+              </select>
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="incheckning">Incheckningsdatum</label>
+              <input type="date" id="incheckning" name="incheckning">
+            </div>
+            <div class="form-group">
+              <label for="utcheckning">Utcheckningsdatum</label>
+              <input type="date" id="utcheckning" name="utcheckning">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="form-group">
+              <label for="vuxna">Antal vuxna</label>
+              <div class="select-wrapper">
+                <select id="vuxna" name="vuxna">
+                  <option value="1">1 vuxen</option>
+                  <option value="2" selected>2 vuxna</option>
+                  <option value="3">3 vuxna</option>
+                  <option value="4">4 vuxna</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="barn">Antal barn</label>
+              <div class="select-wrapper">
+                <select id="barn" name="barn">
+                  <option value="0" selected>0 barn</option>
+                  <option value="1">1 barn</option>
+                  <option value="2">2 barn</option>
+                  <option value="3">3 barn</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <button type="button" class="btn" style="margin-top: 0.5rem;">Skicka bokningsförfrågan</button>
+        </div>
+
+        <!-- Info panel -->
+        <div>
+          <div class="card" style="margin-bottom: 1.5rem;">
+            <h2>Om våra rum</h2>
+            <p>Hotellet erbjuder en hög servicenivå och en behaglig upplevelse för alla gäster. Det är ett lyxigt hotell där personalen är både vänlig och hjälpsam, vilket bidrar till en trivsam atmosfär.</p>
+            <p>Rummen är moderna och bekväma, vilket gör det enkelt att koppla av och känna sig som hemma.</p>
+            <p>Hotellet har även ett exklusivt spa där gästerna kan njuta av olika behandlingar och verkligen varva ner. Dessutom finns en bastu som ger möjlighet till extra avkoppling efter en lång dag.</p>
+            <h3 style="margin-top: 1rem; margin-bottom: 0.5rem;">Vi erbjuder:</h3>
+            <ul class="hours-list">
+              <li>Gratis WiFi</li>
+              <li>Frukost</li>
+              <li>Spa</li>
+              <li>Bastu</li>
+            </ul>
+          </div>
+
+          <div class="card card-accent">
+            <h2>Öppettider</h2>
+            <ul class="hours-list">
+              <li>Måndag till fredag: dygnet runt</li>
+              <li>Lördag: 07.00 – 22.00</li>
+              <li>Söndag: 09.00 – 20.00</li>
+            </ul>
+            <p class="contact-address">Grand Haven Hotell<br>Sigmagatan 67<br>212 43 Malmö</p>
+            <p class="contact-phone">+46-987-99 09</p>
+            <p class="contact-email">info@grandhotell.se</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Grand Haven Hotel</h3>
+        <address>
+          Sigmagatan 67<br>
+          212 43 Malmö<br>
+          Sverige
+        </address>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <p>Telefon: +46-987-99 09</p>
+        <p>E-post: <a href="mailto:info@grandhotell.se">info@grandhotell.se</a></p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Välkommen</a></li>
+          <li><a href="boka.html">Boka</a></li>
+          <li><a href="hitta.html">Hitta</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grand Haven Hotel. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+</body>
+</html>

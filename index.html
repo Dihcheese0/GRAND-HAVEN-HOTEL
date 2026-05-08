@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grand Haven Hotel - Startsida</title>
+  <meta name="description" content="Grand Haven Hotel i hjärtat av Malmö. Lyxigt boende nära Gustav Adolfs torg med utsikt över vattnet. Välkommen till oss.">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-inner">
+      <a href="index.html" class="logo" aria-label="Grand Haven Hotel startsida">
+        <img src="logo.webp" alt="Grand Haven Hotel logotyp" class="logo-icon">
+        <span class="logo-text">GRAND<br>HAVEN HOTEL</span>
+      </a>
+      <nav aria-label="Huvudmeny">
+        <ul>
+          <li><a href="index.html" class="active">Välkommen</a></li>
+          <li><a href="boka.html">Boka</a></li>
+          <li><a href="hitta.html">Hitta</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </nav>
+      <button class="hamburger" aria-label="Öppna meny" aria-expanded="false" aria-controls="mobile-nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE NAV -->
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobilmeny">
+    <a href="index.html" class="active">Välkommen</a>
+    <a href="boka.html">Boka</a>
+    <a href="hitta.html">Hitta</a>
+    <a href="kontakt.html">Kontakt</a>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" aria-label="Hotellvy">
+    <img src="hero.webp" alt="Utsikt från Grand Haven Hotel" width="1400" height="420">
+    <div class="hero-overlay">
+      <h1 class="hero-title">Välkommen till Grand Haven Hotel</h1>
+    </div>
+  </section>
+
+  <!-- MAIN CONTENT -->
+  <main class="page-content">
+    <div class="container">
+
+      <!-- Slideshow -->
+      <div class="slideshow" aria-label="Bildspel av hotellet">
+        <div class="slide active">
+          <img src="rum.webp" alt="Hotellrum på Grand Haven Hotel" width="1200" height="280">
+          <div class="slide-caption">Lyxiga rum med utsikt</div>
+        </div>
+        <div class="slide">
+          <img src="lobby.webp" alt="Lobbyn på Grand Haven Hotel" width="1200" height="280">
+          <div class="slide-caption">Välkomnande lobby</div>
+        </div>
+        <div class="slide">
+          <img src="spa.webp" alt="Spa på Grand Haven Hotel" width="1200" height="280">
+          <div class="slide-caption">Exklusivt spa och bastu</div>
+        </div>
+        <button class="slide-btn prev" aria-label="Föregående bild">&#8249;</button>
+        <button class="slide-btn next" aria-label="Nästa bild">&#8250;</button>
+        <div class="slide-dots" aria-hidden="true">
+          <span class="dot"></span>
+          <span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+
+      <!-- Three columns -->
+      <div class="grid-3" style="margin-top: 2.5rem;">
+
+        <div class="card">
+          <h2>Välkommen</h2>
+          <p>Hotellet är beläget i hjärtat av vackra Malmö, bara några minuter från Gustav Adolfs torg, med utsikt över det glittrande vattnet som omger staden.</p>
+          <p>Här bor du med perfekt närhet till både stadens livliga puls och rofyllda promenadstråk. Triangelstationen ligger på bekvämt gångavstånd, vilket gör det enkelt att ta sig runt – oavsett om du reser i jobbet eller för nöjes skull.</p>
+        </div>
+
+        <div class="card">
+          <h2>Om oss</h2>
+          <p>Vi är mycket glada över att få hälsa dig välkommen till vårt hotell. Hos oss möts du av en varm och inbjudande atmosfär, personlig service och en miljö där du kan känna dig som hemma från första stund.</p>
+          <p>Slå dig ner i vår lobby med en kopp kaffe, koppla av i ditt rum och låt oss ta hand om detaljerna. Vi ser fram emot att göra din vistelse både trivsam och minnesvärd. Varmt välkommen!</p>
+        </div>
+
+        <div class="card card-accent">
+          <h2>Öppettider</h2>
+          <ul class="hours-list">
+            <li>Måndag till fredag: dygnet runt</li>
+            <li>Lördag: 07.00 – 22.00</li>
+            <li>Söndag: 09.00 – 20.00</li>
+          </ul>
+          <p class="contact-address">Grand Haven Hotell<br>Sigmagatan 67<br>212 43 Malmö</p>
+          <p class="contact-phone">+46-987-99 09</p>
+          <p class="contact-email">info@grandhotell.se</p>
+        </div>
+
+      </div>
+
+      <!-- Services -->
+      <div class="services" aria-label="Hotellets tjänster">
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">&#x1F4F6;</div>
+          <h3>Gratis WiFi</h3>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">&#x1F373;</div>
+          <h3>Frukost</h3>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">&#x1F6C1;</div>
+          <h3>Spa</h3>
+        </div>
+        <div class="service-item">
+          <div class="service-icon" aria-hidden="true">&#x1F9D6;</div>
+          <h3>Bastu</h3>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h3>Grand Haven Hotel</h3>
+        <address>
+          Sigmagatan 67<br>
+          212 43 Malmö<br>
+          Sverige
+        </address>
+      </div>
+      <div>
+        <h3>Kontakt</h3>
+        <p>Telefon: +46-987-99 09</p>
+        <p>E-post: <a href="mailto:info@grandhotell.se">info@grandhotell.se</a></p>
+      </div>
+      <div>
+        <h3>Navigation</h3>
+        <ul>
+          <li><a href="index.html">Välkommen</a></li>
+          <li><a href="boka.html">Boka</a></li>
+          <li><a href="hitta.html">Hitta</a></li>
+          <li><a href="kontakt.html">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Grand Haven Hotel. Alla rättigheter förbehållna.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
